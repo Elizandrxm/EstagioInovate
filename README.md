@@ -26,12 +26,13 @@ O projeto foi desenvolvido utilizando os princípios da Programação Orientada 
 - Terminal ou prompt de comando
 
 
-Validações implementadas
+## Validações implementadas
 Regra	Comportamento
 Quantidade <= 0	Ajusta para 1 e exibe aviso
 Preço negativo	Ajusta para 0 e exibe aviso
 Separador decimal	Aceita ponto ou vírgula
-Tecnologia utilizada
+
+## Tecnologia utilizada
 Java (JDK 11 ou superior)
 
 Autora : Elizandra Maria
