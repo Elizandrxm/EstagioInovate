@@ -1,17 +1,37 @@
-#Sistema SuperMarket
+# Sistema SuperMarket.⋆❀° 
 
-Um programa simples em Java para simular o caixa de um mercado. O sistema registra os produtos, calcula os valores e aplica desconto automaticamente.
+Sistema desenvolvido em Java para simular o caixa de um supermercado. O programa registra produtos, calcula o valor total da compra e aplica desconto automaticamente quando aplicável.
 
-## ✨ O que ele faz?
-* 🛍️ Permite cadastrar quantos produtos você quiser.
-* 💰 Aceita preços com **ponto** ou **vírgula** (ex: `4.50` ou `4,50`).
-* 📉 Dá **10% de desconto** se o valor total da compra passar de R$ 100,00.
-* 🛡️ Corrige valores errados sozinho (se digitar quantidade negativa, vira 1).
+## Estrutura do Projeto
 
-## 🚀 Como rodar o código
-1. Salve o código em um arquivo chamado `Main.java`.
-2. Abra o terminal na mesma pasta do arquivo.
-3. Digite os comandos abaixo:
-```bash
-javac Main.java
-java Main
+O projeto foi desenvolvido utilizando os princípios da Programação Orientada a Objetos (POO), com separação clara de responsabilidades:
+
+- **Classe Produto**: Responsável por armazenar os dados do produto (nome, quantidade, preço unitário) e validar as entradas.
+- **Classe Main**: Responsável pela interação com o usuário, fluxo do programa, cálculo do total e aplicação do desconto.
+
+## Funcionalidades
+
+- Cadastro de múltiplos produtos em uma única compra
+- Validação automática de entradas:
+  - Quantidades menores ou iguais a zero são ajustadas para 1
+  - Preços negativos são ajustados para 0
+  - Mensagens de aviso são exibidas ao usuário
+- Cálculo do valor total da compra com duas casas decimais
+- Aplicação de desconto de 10% para compras acima de R$ 100,00
+- Exibição clara do valor original, desconto aplicado e valor final (quando aplicável)
+
+## Pré-requisitos
+
+- Java JDK 11 ou superior instalado
+- Terminal ou prompt de comando
+
+
+Validações implementadas
+Regra	Comportamento
+Quantidade <= 0	Ajusta para 1 e exibe aviso
+Preço negativo	Ajusta para 0 e exibe aviso
+Separador decimal	Aceita ponto ou vírgula
+Tecnologia utilizada
+Java (JDK 11 ou superior)
+
+Autora : Elizandra Maria
